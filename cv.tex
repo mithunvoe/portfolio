@@ -1,0 +1,204 @@
+% Kabya Mithun Saha's Resume
+% Created: 7 Jan 2004
+% Last Modified: 17 Jul 2004
+
+\documentclass[10pt,oneside]{article}
+\usepackage{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=blue]{hyperref}
+
+\pagestyle{empty}
+\geometry{letterpaper,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in,headheight=0in,headsep=0in,footskip=.3in}
+
+\setlength{\parindent}{0in}
+\setlength{\parskip}{0in}
+\setlength{\itemsep}{0in}
+\setlength{\topsep}{0in}
+\setlength{\tabcolsep}{0in}
+
+% Name and contact information
+\newcommand{\name}{Kabya Mithun Saha}
+\newcommand{\addr}{7108/R-Jagannath Hall, Dhaka, Bangladesh}
+\newcommand{\phone}{+8801303359281}
+\newcommand{\email}{\href{mailto:kabyasaha1812@gmail.com}{kabyasaha1812@gmail.com}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% New commands and environments
+
+% This defines how the name looks
+\newcommand{\bigname}[1]{
+  \begin{center}\fontfamily{phv}\selectfont\Huge\scshape#1\end{center}
+}
+
+% A ressection is a main section (<H1>Section</H1>)
+\newenvironment{ressection}[1]{
+  \vspace{4pt}
+  {\fontfamily{phv}\selectfont\Large#1}
+  \begin{itemize}
+  \vspace{3pt}
+}{
+  \end{itemize}
+}
+
+% A resitem is a simple list element in a ressection (first level)
+\newcommand{\resitem}[1]{
+  \vspace{-4pt}
+  \item \begin{flushleft} #1 \end{flushleft}
+}
+
+% A ressubitem is a simple list element in anything but a ressection (second level)
+\newcommand{\ressubitem}[1]{
+  \vspace{-1pt}
+  \item \begin{flushleft} #1 \end{flushleft}
+}
+
+% A resbigitem is a complex list element for stuff like jobs and education:
+%  Arg 1: Name of company or university
+%  Arg 2: Location
+%  Arg 3: Title and/or date range
+\newcommand{\resbigitem}[3]{
+  \vspace{-5pt}
+  \item
+  \textbf{#1}---#2 \\
+  \textit{#3}
+}
+
+% This is a list that comes with a resbigitem
+\newenvironment{ressubsec}[3]{
+  \resbigitem{#1}{#2}{#3}
+  \vspace{-2pt}
+  \begin{itemize}
+}{
+  \end{itemize}
+}
+
+% This is a simple sublist
+\newenvironment{reslist}[1]{
+  \resitem{\textbf{#1}}
+  \vspace{-5pt}
+  \begin{itemize}
+}{
+  \end{itemize}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Now for the actual document:
+
+\begin{document}
+
+\fontfamily{ppl} \selectfont
+
+% Name with horizontal rule
+\bigname{\name}
+
+\vspace{-8pt} \rule{\textwidth}{1pt}
+
+\vspace{-1pt} {\small\itshape \addr \hfill \phone; \email}
+
+\vspace{8 pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{ressection}{Summary}
+    \resitem{Frontend researcher and Flutter developer with strong programming fundamentals and experience building mobile applications. Combining competitive programming expertise with practical app development skills to deliver efficient, user-friendly solutions.}
+\end{ressection}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{ressection}{Education}
+
+  \begin{ressubsec}{University of Dhaka}{Bangladesh}{Bachelor of Science in Computer Science and Engineering}
+    \ressubitem{GPA: \textbf{3.81}/4.00 (Upto second year second semester)}
+    \ressubitem{Current Academic Year: \textbf{Third}}
+    \ressubitem{Expected Graduation: January 2027}
+  \end{ressubsec}
+
+\end{ressection}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{ressection}{Projects}
+
+
+    \begin{ressubsec}{Recipe App}{Flutter, Firebase, Supabase}{Academic Group Project (\textbf{\href{https://github.com/ninadgns/Android-Project-Pink-Flag}{Link}})}
+        \ressubitem{Developed a feature-rich recipe application using Flutter and Supabase for backend services}
+        \ressubitem{Implemented user authentication using Firebase, recipe search, favorites, and social sharing features}
+        \ressubitem{Applied clean architecture principles with state management using riverpod}
+    \end{ressubsec}
+    
+    \begin{ressubsec}{Sudoku Solver App}{Flutter}{Personal Project (\textbf{\href{https://github.com/mithunvoe/sudoku_solver}{Link}})}
+        \ressubitem{Built an interactive Sudoku solver app with automatic solving algorithms for all difficulty levels}
+        \ressubitem{Integrated Firebase authentication, enabling secure user logins, and established social sharing features.}
+    \end{ressubsec}
+    
+    \begin{ressubsec}{Hill Climb Racing}{C++, SDL2}{Academic Project (\textbf{\href{https://github.com/mithunvoe/Hill-Climb-Racing}{Link}})}
+        \ressubitem{Built this game as a group project}
+        \ressubitem{Implemented physics and other features without using any game engines}
+    \end{ressubsec}
+
+\end{ressection}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{ressection}{Experience}
+
+    \begin{ressubsec}{Frontend Researcher}{Sociofi Technology}{May 2025 -- Present}
+        \ressubitem{Conducting research and development in frontend technologies and user interface design}
+        \ressubitem{Contributing to innovative web and mobile frontend solutions}
+    \end{ressubsec}
+
+    \begin{ressubsec}{Math and Programming Annotator}{GenMorphics AI Solutions, SuperAnnotate}{August 2023 -- Present}
+        \ressubitem{Contributing as a Math and Python Programming Annotator for prominent AI platforms}
+        \ressubitem{Ensuring high-quality annotations and precise data labeling for machine learning systems}
+    \end{ressubsec}
+    
+    \begin{ressubsec}{Competitive Programmer and Academic Team Member}{}{September 2022 -- Present}
+        \ressubitem{Solved over 1500 algorithmic problems on platforms such as Codeforces, CodeChef, and AtCoder}
+        \ressubitem{Serving as a \textbf{CP Trainer} at CSEDU Informatics Club, mentoring junior students}
+        \ressubitem{Academic Team Member at the Bangladesh Mathematical Olympiad (BdMO), designing problems for competitions}
+    \end{ressubsec}
+
+\end{ressection}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{ressection}{Skills}
+
+    \begin{reslist}{Mobile Development:}
+        \ressubitem{Flutter \& Dart: UI development, state management (Provider, Riverpod), Firebase integration}
+        \ressubitem{Mobile app architecture, responsive design, cross-platform development}
+    \end{reslist}
+
+  \begin{reslist}{Programming Languages and Frameworks:}
+    \ressubitem{Proficient: Dart, Flutter, C++, Java, Python, SQL, \LaTeX, UNIX Shells}
+    \ressubitem{Familiar: Rust, React, NextJS, JavaScript}
+  \end{reslist}
+
+    \resitem{\textbf{Development Tools:} Git, Firebase, VS Code, Android Studio, Docker (basic), Jupyter Notebooks}
+
+    \resitem{\textbf{Operating Systems:} Linux (Ubuntu) as the primary OS, Windows}
+
+  \resitem{\textbf{Languages:} Proficient in Bengali (native) and English}
+
+\end{ressection}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{ressection}{Achievements and Activities}
+    \resitem{\textbf{Champion}, DUCTF 2024: Secured \textbf{first} place in the prestigious annual programming competition}
+
+  \resitem{\textbf{Runner Up}, Battle of Brains 2024: A prestigious coding competition}
+
+  \resitem{Achieved highest rating of \textbf{Expert} on Codeforces \href{https://codeforces.com/profile/m_ithunvoe}{(1672)} and \textbf{\href{https://www.codechef.com/users/kabyasaha1812}{4 Star}} on CodeChef, placing in the top 10\% globally}
+
+  \resitem{Participated in over 15 national programming contests, including ICPC regional rounds}
+    
+  \resitem{Vice President of \textbf{Josephite Math Club (JMC)}: Led a team of over 30 students in organizing events}
+
+
+  \resitem{Executive Committee Member, \textbf{CSEDU Informatics Club}: Organized programming contests and hackathons}
+
+\end{ressection}
+
+
+\end{document}
