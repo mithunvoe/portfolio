@@ -8,7 +8,7 @@ function Main() {
     <div className="container">
       <div className="about-section">
         <div className="image-wrapper">
-          <img src="https://scontent.fdac142-1.fna.fbcdn.net/v/t39.30808-6/484494701_2006691606480709_5577813586135103358_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeHwo41noXBrqmQ0BhJQ6IXnasTrvlQ4pI5qxOu-VDikjuY5yMy-3dEok_tCm5UynMVxo0lmH8i7xiUYvrQqM3Hq&_nc_ohc=qCFYtiQkbfkQ7kNvwHY9zut&_nc_oc=Adm0789RJSEMGMTMXln_dXSlarSObcNWhe-UGD5zgTLcU0Hyp69F0h8rU3vrOWdV3DI&_nc_zt=23&_nc_ht=scontent.fdac142-1.fna&_nc_gid=Pf8ZMyudyXfd0Yb2vc5Ivw&oh=00_AfPH6sKP_L4_E9CWbIENaexvFoTCJYQObCTpFb41IHx6jQ&oe=686C7C81" alt="Avatar" />
+          <img src="https://scontent.fzyl2-2.fna.fbcdn.net/v/t39.30808-6/494446344_2046011659215370_185682841636141736_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeETO8_88tYRdQ__xygOy908ptVjuT2Q3uym1WO5PZDe7F8ErGSKxRGn2gyy2m27e5Xnti_2UCNGUrdGuNFj5-02&_nc_ohc=KWASuktymQoQ7kNvwHe_3N3&_nc_oc=AdmDswGbUkKSAoM9R02uI3S5siASGcTlkFH03_ImYzuDXU72R0_DpkFeMQMqqVcZmuw&_nc_zt=23&_nc_ht=scontent.fzyl2-2.fna&_nc_gid=Nuo4XV3Lw8vZANM2www2AA&oh=00_AfX0aRpVZZFWioiHMDbpk2pDzYIIYjb0irtoxdfn8LKxyg&oe=68A3DEE6" alt="Avatar" />
         </div>
         <div className="content">
           <div className="social_icons">
